@@ -3,15 +3,35 @@ CSS
 */
 
 html {
-  background-color: #E8DDCB;
+  background-color: #ffffff;
 }
 
 body {
-  margin: 0;
+	background: #fff url(../img/bg-body.png) top no-repeat;	
+	margin: 0;
+	padding: 0;
+	
+/*  margin: 0;
   padding: 0;
   font: .625em Georgia, Serif;
-  background-color: #E8DDCB;
+  background-color: #ffffff;
   color: #363636;
+*/
+}
+
+#headerwrapper {
+	background: #ecf3f9;
+	width: 100%;
+	height: 191px;
+}
+
+#header {
+	width: 772px;
+	height: 191px;
+	
+	background: url(../img/bg-body.png) no-repeat right top transparent;	display: block;
+	
+	margin: 0 auto;
 }
 
 #page {
@@ -21,6 +41,10 @@ body {
   font-size: 1.2em;
 }
 
+#logo {
+	padding: 30px 0px 0px 0px;
+}
+
 /*
 General
 */
@@ -28,7 +52,9 @@ General
 p {
 	margin: 1.4em 0;
 	padding: 0;
-	line-height: 1.4em;
+	line-height: 1em;
+	font-weight: normal;
+	font-size: 1.2em;
 }
 
 img {
@@ -72,19 +98,19 @@ blockquote p {
 Headers
 */
 
-h1,
 h2,
 h3,
 h4 {
-	line-height: 1.286;
+	line-height: .2;
 	margin: .4em 0;
 	padding: 0;
 	text-shadow: 1px 1px 0 #fff;
 }
 
 h1 {
+	line-height: .1;
 	font-weight: normal;
-	font-size: 2.2em;
+	font-size: 1.8em;
 	text-align: center;
 	color: #031634;
 }
@@ -127,25 +153,6 @@ h2#badge-subtitle {
 Header
 */
 
-#header {
-  border-bottom: 1px dotted #CDB380;
-}
-
-#header #logo {
-  margin: auto;
-  width: 300px;
-  height: 215px;
-  background: transparent url(../images/logo-small-acts.png) no-repeat 0 0;
-  text-indent: -9999px;
-}
-
-#header #logo a {
-  display: block;
-  width: 300px;
-  height: 215px;
-  border: none;
-}
-
 #header blockquote p {
   text-shadow: 1px 1px 0 #fff;
 }
@@ -153,11 +160,11 @@ Header
 /*
 Content
 */
-
 #content {
-  margin: 0 20px;
-  font-size: 1.4em;
-  text-shadow: 1px 1px 0 #fff;
+	width: 772px;
+	margin: 0 auto;
+	padding: 30px 0px 50px 0px;
+    text-align: center;
 }
 
 ul#acts li {
@@ -234,20 +241,14 @@ form input {
 }
 
 form p {
-  /*margin: -35px 0 0 440px;*/
   padding: 8px;
   width: 300px;
-  /*position: absolute;*/
-  /*border: 1px solid #033649;*/
-  /*background-color: #036564;*/
-  /*color: #fff;*/
-  /*font-size: .9em;*/
   font-family: Arial, Helvetica, Sans-Serif;
 }
 
 form p em {
-  /*font-size: 1.2em;*/
-  /*display: block;*/
+  font-size: 1.2em;
+  display: block;
 }
 
 .info_label {
@@ -271,14 +272,11 @@ Footer
 */
 
 #footer {
-  clear: both;
-  font-size: .9em;
-  padding: 0 20px;
-  border-top: 1px dotted #CDB380;
-}
-
-#footer img {
-  vertical-align: middle;
+	height: 100%;
+	background-color: #ecf3f9;
+    clear: both;
+    font-size: .9em;
+    padding: 0 20px;
 }
 
 #footer #django {
